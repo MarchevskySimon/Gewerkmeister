@@ -1,0 +1,388 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  color: #ffffff;
+}
+
+body {
+  background-color: #151515;
+}
+
+/* NAV */
+
+nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 0.5rem 1rem;
+  z-index: 100;
+  background-color: #151515;
+  border-bottom: 2px solid #f4d202;
+}
+nav button svg {
+  width: 25%;
+}
+.nav-link {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin: 0 1rem;
+  color: #fff;
+}
+
+.nav-link:hover {
+  color: #f4d202;
+}
+/* HEADER */
+
+header {
+  position: relative;
+  padding: 5rem 0 4rem 0;
+  background-image: url("img/gewerk-bci.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+header img {
+  width: 300px;
+  margin-bottom: 2rem;
+}
+header h1 {
+  font-size: 6rem;
+  font-weight: 600;
+  color: #151515;
+}
+header p {
+  font-size: 2rem;
+  font-weight: 300;
+  margin: 0;
+  padding-top: 1rem;
+  text-align: center;
+  color: #151515;
+}
+
+/* MAIN */
+
+#main {
+  position: relative;
+  padding: 5rem 5rem 0rem 5rem;
+  background-color: #151515;
+  -webkit-box-shadow: 00px -5px 30px 0px #000000;
+  box-shadow: 00px -5px 30px 0px #000000;
+}
+
+main h3 {
+  font-size: 8rem;
+  font-weight: 600;
+}
+.main_text h6 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 2rem 0;
+  color: #f4d202;
+}
+
+.main_text p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 2.5rem;
+}
+
+.main_text span {
+  display: inline-block;
+  margin-left: 50px;
+}
+
+/* GALLERY */
+
+.gallery {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 0rem 5rem;
+  margin-bottom: 5rem;
+  background-color: #151515;
+  overflow: hidden;
+  /* border: 5px solid red; */
+}
+.darker {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #151515;
+  opacity: 0.7;
+}
+.gallery h1 {
+  font-size: 8rem;
+  font-weight: 900;
+}
+.gallery svg {
+  position: relative;
+  width: 50px;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  z-index: 2;
+}
+.gallery svg:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+#arrow-up {
+  margin-bottom: 3rem;
+}
+#arrow-down {
+  margin-top: 3rem;
+}
+.gallery img {
+  position: relative;
+  height: 350px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 25px 15px -15px #000;
+  box-shadow: 0px 25px 15px -15px #000;
+}
+
+/* Carasoul */
+.carousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.carousel-indicators {
+  position: relative;
+  width: 100%;
+  bottom: auto;
+  margin: 0 0 5rem 0;
+  padding-top: 5rem;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  /* background-color: red; */
+  border-top: 2px solid #f4d202;
+}
+.carousel-indicators [data-bs-target] {
+  text-indent: 0;
+  width: auto;
+  height: auto;
+  opacity: 1;
+  background-color: transparent;
+  border: none;
+}
+.indicators button {
+  font-size: 1.2rem;
+  font-weight: 300;
+  top: 0;
+}
+.indicators {
+  position: relative;
+  z-index: 2;
+  margin: 5rem 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 2px solid #f4d202;
+  padding-top: 5rem;
+}
+.gall-button {
+  padding: 0.8rem;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 25px 15px -15px #000;
+  box-shadow: 0px 25px 15px -15px #000;
+  border: 2px solid #f4d202;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  background-color: #151515;
+}
+.indicators button:hover {
+  color: #000;
+  background-color: #f4d202;
+}
+button.active {
+  color: #000;
+  background-color: #f4d202;
+}
+.carousel-item {
+  margin: 0;
+}
+.carousel-inner {
+  overflow: visible;
+}
+
+/* SOC. SIETE */
+
+.soc_siete {
+  position: relative;
+  width: 100%;
+  padding: 3rem 5rem;
+  background-color: #f4d202;
+  -webkit-box-shadow: 00px -5px 30px 0px #000000;
+  box-shadow: 00px -5px 30px 0px #000000;
+}
+
+.soc_siete h3 {
+  font-size: 8rem;
+  font-weight: 600;
+  color: #151515;
+}
+
+.max-h3 {
+  display: block;
+}
+.min-h3 {
+  display: none;
+}
+
+.soc_siete svg {
+  width: 10rem;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.soc_siete svg:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/* FOOTER */
+
+#footer {
+  position: relative;
+  width: 100%;
+  padding: 2rem 5rem;
+  background-color: #151515;
+  -webkit-box-shadow: 00px -5px 30px 0px #000000;
+  box-shadow: 00px -5px 30px 0px #000000;
+}
+
+footer h3 {
+  font-size: 8rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer li {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+footer a {
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+footer a:hover {
+  color: #f4d202;
+}
+
+footer h6 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 2rem 0;
+  color: #f4d202;
+}
+
+@media only screen and (max-width: 850px) {
+  * {
+    text-align: center;
+  }
+  h3,
+  h1 {
+    font-size: 5rem !important;
+  }
+
+  /* NAV */
+  nav {
+    width: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 0;
+  }
+  /* HEADER */
+  header {
+    background-attachment: unset;
+  }
+
+  /* MAIN */
+  .main_text p {
+    font-size: 1rem;
+  }
+
+  /* GALLERY */
+  .gallery {
+    height: auto;
+    padding: 1rem;
+  }
+
+  /* SOC. S. */
+  .soc_siete {
+    padding: 3rem 0rem;
+  }
+  .max-h3 {
+    display: none;
+  }
+  .min-h3 {
+    display: block;
+  }
+  .soc_siete svg {
+    width: 7rem;
+    padding: auto;
+  }
+
+  /* FOOTER */
+  #footer {
+    padding: 2rem;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .gallery img {
+    width: 300px;
+    height: auto;
+  }
+  .carousel {
+    margin-top: 5rem;
+  }
+  .indicators {
+    flex-direction: column;
+  }
+  .carousel-indicators {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .indicators button {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    width: 80%;
+  }
+}
